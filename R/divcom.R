@@ -26,7 +26,7 @@
 #' @examples #Calculate total diverstiy and its components of a RasterStack
 #' ex <-divcom(MTCI.stabelchod)
 #'
-#'
+#' @export
 #'
 divcom <-function(x) {
 

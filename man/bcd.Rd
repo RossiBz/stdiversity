@@ -29,8 +29,6 @@ different layers. All pixels are considered equally important.
 #Dataset contribution to diversity
 ex <-bcd(MTCI.stabelchod)
 
-
-
 }
 \references{
 Rossi et al. (2020) Remote Sensing of Environment 236:111415

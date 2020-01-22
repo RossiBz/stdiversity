@@ -29,6 +29,8 @@ different layers. All pixels are considered equally important.
 #plot pixel contribution to diversity
 plot(lcd(MTCI.stabelchod))
 
+#' @export
+
 }
 \references{
 Rossi et al. (2020) Remote Sensing of Environment 236:111415

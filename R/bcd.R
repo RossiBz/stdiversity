@@ -28,7 +28,7 @@
 #' @examples #Dataset contribution to diversity
 #' ex <-bcd(MTCI.stabelchod)
 #'
-#'
+#' @export
 #'
 bcd <- function(x, percentage = TRUE) {
   BCD <-

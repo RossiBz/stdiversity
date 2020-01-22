@@ -27,8 +27,6 @@ of different layers. All pixels are considered equally important.
 #Calculate total diverstiy and its components of a RasterStack
 ex <-divcom(MTCI.stabelchod)
 
-
-
 }
 \references{
 Rossi et al. (2020) Remote Sensing of Environment 236:111415
