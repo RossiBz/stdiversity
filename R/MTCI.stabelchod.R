@@ -7,8 +7,6 @@
 #'
 #' @docType data
 #'
-#' @import raster
-#' @import rgdal
 #'
 #' @usage data(MTCI.stabelchod)
 #'
