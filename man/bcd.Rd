@@ -4,12 +4,7 @@
 \alias{bcd}
 \title{Layer contribution to diversity}
 \usage{
-typical usage is
-
 bcd(x, percentage=TRUE)
-
-where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-plant trait (e.g., specific leaf area).
 }
 \arguments{
 \item{x}{filename (character), Raster* object}
@@ -26,8 +21,11 @@ dissimilarity between pixels belonging to the same layer as well as the dissimil
 different layers. All pixels are considered equally important.
 }
 \examples{
-#Dataset contribution to diversity
+\dontrun{#Dataset contribution to diversity
 ex <-bcd(MTCI.stabelchod)
+# MTCI.stabelchod is a RasterStack containing
+# a time series of spectral information
+}
 
 }
 \references{

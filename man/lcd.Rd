@@ -4,12 +4,7 @@
 \alias{lcd}
 \title{Local contribution of each pixel to diversity}
 \usage{
-typical usage is
-
 lcd(x, percentage=TRUE)
-
-where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-plant trait (e.g., specific leaf area).
 }
 \arguments{
 \item{x}{filename (character), Raster* object}
@@ -26,8 +21,11 @@ dissimilarity between pixels belonging to the same layer as well as the dissimil
 different layers. All pixels are considered equally important.
 }
 \examples{
-#plot pixel contribution to diversity
+\dontrun{#plot pixel contribution to diversity
 plot(lcd(MTCI.stabelchod))
+# MTCI.stabelchod is a RasterStack containing
+# a time series of spectral information
+}
 
 }
 \references{

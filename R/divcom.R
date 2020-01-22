@@ -15,19 +15,18 @@
 #' @import raster
 #' @import rgdal
 #'
-#' @usage typical usage is
-#'
-#' divcom(x)
-#'
-#' where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-#' plant trait (e.g., specific leaf area).
+#' @usage divcom(x)
 #'
 #' @references Rossi et al. (2020) Remote Sensing of Environment 236:111415
 #' (\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
 #'
 #'
-#' @examples #Calculate total diverstiy and its components of a RasterStack
+#' @examples \dontrun{#Calculate total diverstiy and its components of a RasterStack
 #' ex <-divcom(MTCI.stabelchod)
+#' # MTCI.stabelchod is a RasterStack containing
+#' # a time series of spectral information
+#' }
+#'
 #'
 #' @export
 #'

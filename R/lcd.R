@@ -17,19 +17,17 @@
 #' @import rgdal
 #'
 #'
-#' @usage  typical usage is
-#'
-#' lcd(x, percentage=TRUE)
-#'
-#' where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-#' plant trait (e.g., specific leaf area).
+#' @usage lcd(x, percentage=TRUE)
 #'
 #' @references Rossi et al. (2020) Remote Sensing of Environment 236:111415
 #' (\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
 #'
 #'
-#' @examples #plot pixel contribution to diversity
+#' @examples \dontrun{#plot pixel contribution to diversity
 #' plot(lcd(MTCI.stabelchod))
+#' # MTCI.stabelchod is a RasterStack containing
+#' # a time series of spectral information
+#' }
 #'
 #' @export
 #'

@@ -4,12 +4,7 @@
 \alias{divcom}
 \title{Total diversity and its components: spatial, layer (temporal) and interaction term}
 \usage{
-typical usage is
-
 divcom(x)
-
-where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-plant trait (e.g., specific leaf area).
 }
 \arguments{
 \item{x}{filename (character), Raster* object}
@@ -24,8 +19,12 @@ for the pairwise dissimilarity between pixels belonging to the same layer as wel
 of different layers. All pixels are considered equally important.
 }
 \examples{
-#Calculate total diverstiy and its components of a RasterStack
+\dontrun{#Calculate total diverstiy and its components of a RasterStack
 ex <-divcom(MTCI.stabelchod)
+# MTCI.stabelchod is a RasterStack containing
+# a time series of spectral information
+}
+
 
 }
 \references{

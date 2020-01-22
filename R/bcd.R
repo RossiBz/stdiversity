@@ -17,19 +17,17 @@
 #' @import raster
 #' @import rgdal
 #'
-#' @usage typical usage is
-#'
-#' bcd(x, percentage=TRUE)
-#'
-#' where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
-#' plant trait (e.g., specific leaf area).
+#' @usage bcd(x, percentage=TRUE)
 #'
 #' @references Rossi et al. (2020) Remote Sensing of Environment 236:111415
 #' (\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
 #'
 #'
-#' @examples #Dataset contribution to diversity
+#' @examples \dontrun{#Dataset contribution to diversity
 #' ex <-bcd(MTCI.stabelchod)
+#' # MTCI.stabelchod is a RasterStack containing
+#' # a time series of spectral information
+#' }
 #'
 #' @export
 #'
