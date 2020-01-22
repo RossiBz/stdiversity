@@ -12,6 +12,9 @@
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
+#' @import raster
+#' @import rgdal
+#'
 #' @usage typical usage is
 #'
 #' divcom(x)

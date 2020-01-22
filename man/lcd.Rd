@@ -6,7 +6,7 @@
 \usage{
 typical usage is
 
-lcd(x)
+lcd(x, percentage=TRUE)
 
 where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
 plant trait (e.g., specific leaf area).
@@ -28,8 +28,6 @@ different layers. All pixels are considered equally important.
 \examples{
 #plot pixel contribution to diversity
 plot(lcd(MTCI.stabelchod))
-
-#' @export
 
 }
 \references{

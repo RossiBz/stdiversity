@@ -2,3 +2,6 @@
 
 export(bcd)
 export(divcom)
+export(lcd)
+import(raster)
+import(rgdal)

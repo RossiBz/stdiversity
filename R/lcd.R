@@ -13,9 +13,13 @@
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
+#' @import raster
+#' @import rgdal
+#'
+#'
 #' @usage  typical usage is
 #'
-#' lcd(x)
+#' lcd(x, percentage=TRUE)
 #'
 #' where x is a RasterStack containing a time series of one spectral information (e.g., NDVI) or
 #' plant trait (e.g., specific leaf area).
@@ -27,7 +31,7 @@
 #' @examples #plot pixel contribution to diversity
 #' plot(lcd(MTCI.stabelchod))
 #'
-#'#' @export
+#' @export
 #'
 lcd <- function(x, percentage = TRUE) {
     LCD <-
