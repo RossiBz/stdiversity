@@ -7,6 +7,9 @@
 #'
 #' @docType data
 #'
+#' @import raster
+#' @import rgdal
+#'
 #' @usage data(MTCI.stabelchod)
 #'
 #' @format An object of class RasterStack.
