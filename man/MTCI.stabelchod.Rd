@@ -9,9 +9,9 @@
 data(MTCI.stabelchod)
 }
 \description{
-MTCI was calculated from eleven atmospherically corrected Sentinel-2 images
-from summer 2017 and 2018. Fo Further details see Rossi et al., (2020). The extent
-of the raster is constrained to the meadow in Stabelchod and the surrounding forest.
+MTCI (MERIS terrestrial chlorophyll index) was calculated from eleven atmospherically
+corrected Sentinel-2 images from summer 2017 and 2018. Fo Further details see Rossi et al., (2020).
+The extent of the raster is constrained to the meadow in Stabelchod and the surrounding forest.
 }
 \references{
 Rossi et al. (2020) Remote Sensing of Environment 236:111415
