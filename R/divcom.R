@@ -17,8 +17,10 @@
 #'
 #' @usage divcom(x)
 #'
-#' @references Rossi et al. (2020) Remote Sensing of Environment 236:111415
-#' (\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
+#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
+#' components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
+#' Open Archive.(\href{https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1})
+#'
 #'
 #'
 #' @examples \dontrun{#Calculate total diverstiy and its components of a RasterStack
