@@ -31,6 +31,9 @@
 #'
 #' @export
 #'
+
+library(raster)
+
 bcd <- function(x, percentage = TRUE) {
   BCD <-
     cellStats((x - mean(cellStats(x, mean))) ^ 2, sum) / (cellStats(!is.na(x), sum)[1] *

@@ -31,6 +31,9 @@
 #'
 #' @export
 #'
+
+library(raster)
+
 lcd <- function(x, percentage = TRUE) {
     LCD <-
         calc((x - mean(cellStats(x, mean))) ^ 2, fun = sum) / (cellStats(!is.na(x), sum)[1] * #number of pixels

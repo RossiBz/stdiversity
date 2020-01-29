@@ -30,21 +30,24 @@
 #'
 #' @export
 #'
+
+library(raster)
+
 divcom <-function(x) {
 
 
   n.pixel <-cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
   n.bands <-dim(x)[3] #number of layers
 
-  tcd <-sum((cellStats(x,mean)-mean(cellStats(x, mean)))^2) * n.pixel
+  tcd <-sum((cellStats(x,mean)-mean(cellStats(x, mean)))^2) * n.pixel #temporal (layer) diversity
 
-  scd <-cellStats((calc(x,fun=mean,na.rm=TRUE)-mean(cellStats(x, mean)))^2,sum) * n.bands
+  scd <-cellStats((calc(x,fun=mean,na.rm=TRUE)-mean(cellStats(x, mean)))^2,sum) * n.bands #spatial (pixel) diversity
 
-  cd <-sum(cellStats((x-mean(cellStats(x, mean)))^2,sum))
+  cd <-sum(cellStats((x-mean(cellStats(x, mean)))^2,sum)) #total diversity
 
-  icd <-(cd-tcd-scd)
+  icd <-(cd-tcd-scd) #interaction term
 
-  dc.return <-c(tcd,scd,icd,cd)/(n.bands*n.pixel)
+  dc.return <-c(tcd,scd,icd,cd)/(n.bands*n.pixel) #contribution of the components
 
   names(dc.return) <-c("Layer component", "Spatial component", "Intercation term", "Total diversity")
 
