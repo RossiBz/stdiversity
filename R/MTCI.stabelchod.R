@@ -18,4 +18,6 @@
 #' (\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
 #'
 
+library(raster)
+
 "MTCI.stabelchod"
