@@ -1,6 +1,6 @@
 # stdiversity
 
-## R package to calculate spatial temproal diversity of raster data 
+## R package to calculate spatial temporal diversity of raster data 
 
 The package allows to calculate spectral/functional diversity from multi-temporal raster 
 files and the contribution of different components as proposed by Rossi et al. (2020). The diversity calculation is based on 
