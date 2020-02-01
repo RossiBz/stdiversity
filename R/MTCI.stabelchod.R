@@ -20,6 +20,4 @@
 #'
 
 
-library(raster)
-
 "MTCI.stabelchod"

@@ -34,7 +34,6 @@
 #' @export
 #'
 
-library(raster)
 
 lcd <- function(x, percentage = TRUE) {
     LCD <-

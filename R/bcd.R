@@ -33,7 +33,6 @@
 #' @export
 #'
 
-library(raster)
 
 bcd <- function(x, percentage = TRUE) {
   BCD <-
