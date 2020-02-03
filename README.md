@@ -42,3 +42,10 @@ The extent of the raster is constrained to the meadow in Stabelchod and the surr
 ## License
 
 Licensed under the GNU General Public License, Version 3.0: https://www.gnu.org/licenses/gpl-3.0.html
+
+## Reference
+
+Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
+components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
+Open Archive. URL https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1
+
