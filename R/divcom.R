@@ -50,7 +50,7 @@ divcom <-function(x) {
 
   dc.return <-c(tcd,scd,icd,cd)/(n.bands*n.pixel) #contribution of the components
 
-  names(dc.return) <-c("Layer component", "Spatial component", "Intercation term", "Total diversity")
+  names(dc.return) <-c("Layer component", "Spatial component", "Interaction term", "Total diversity")
 
 
 
