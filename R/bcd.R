@@ -19,7 +19,7 @@
 #'
 #' @usage bcd(x, percentage=TRUE)
 #'
-#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Remote sensing of spectral diversity: 
+#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2021). Remote sensing of spectral diversity: 
 #' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
 #' (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 #'
