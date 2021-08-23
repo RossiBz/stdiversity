@@ -2,7 +2,7 @@
 #' MTCI time series of Stabelchod in the Swiss National Park
 #'
 #' MTCI (MERIS terrestrial chlorophyll index) was calculated from eleven atmospherically
-#' corrected Sentinel-2 images from summer 2017 and 2018. Fo Further details see Rossi et al., (2020).
+#' corrected Sentinel-2 images from summer 2017 and 2018. Fo Further details see Rossi et al., (2021).
 #' The extent of the raster is constrained to the meadow in Stabelchod and the surrounding forest.
 #'
 #' @docType data
@@ -14,9 +14,9 @@
 #'
 #' @keywords datasets
 #'
-#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
-#' components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
-#' Open Archive.(\href{https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1})
+#' @references Rossi, C., Kneubühler, M., Schütz, M., Schaepman,M.E,Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity: 
+#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
+#' (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 #'
 
 
