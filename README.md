@@ -3,7 +3,7 @@
 ## R package to calculate spatial temporal diversity from raster data 
 
 The package allows to calculate spectral/functional diversity from multi-temporal raster 
-files and the contribution of different components as proposed by Rossi et al. (2020). The diversity calculation is based on 
+files and the contribution of different components as proposed by Rossi et al. (2021). The diversity calculation is based on 
 the sum of square divided by the number of pixels and layers. The diversity accounts for
 for the pairwise dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels
 of different layers. All pixels are considered equally important.
@@ -45,7 +45,7 @@ Licensed under the GNU General Public License, Version 3.0: https://www.gnu.org/
 
 ## Reference
 
-Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
-components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
-Open Archive. URL https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1
+Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2021). Remote sensing of spectral diversity: 
+A new methodological approach to account for spatio-temporal dissimilarities between plant communities.
+Ecological Indictors, 130, 108106. https://doi.org/10.1016/j.ecolind.2021.108106
 
