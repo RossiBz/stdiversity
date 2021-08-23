@@ -1,7 +1,7 @@
 
 #' Local contribution of each pixel to diversity
 #'
-#' lcd computes the contribution of each pixel to the overall diversity as proposed by Rossi et al. (2020). The diversity
+#' lcd computes the contribution of each pixel to the overall diversity as proposed by Rossi et al. (2021). The diversity
 #' calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for the pairwise
 #' dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels of
 #' different layers. All pixels are considered equally important.
@@ -19,9 +19,9 @@
 #'
 #' @usage lcd(x, percentage=TRUE)
 #'
-#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
-#' components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
-#' Open Archive.(\href{https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1})
+#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2021). Remote sensing of spectral diversity: 
+#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
+#' (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 #'
 #'
 #'
