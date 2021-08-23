@@ -45,7 +45,7 @@ Licensed under the GNU General Public License, Version 3.0: https://www.gnu.org/
 
 ## Reference
 
-Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2021). Remote sensing of spectral diversity: 
-A new methodological approach to account for spatio-temporal dissimilarities between plant communities.
-Ecological Indictors, 130, 108106. https://doi.org/10.1016/j.ecolind.2021.108106
+Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity: 
+A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
+https://doi.org/10.1016/j.ecolind.2021.108106
 
