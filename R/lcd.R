@@ -37,13 +37,13 @@
 
 lcd <- function(x, percentage = TRUE) {
     LCD <-
-        calc((x - mean(cellStats(x, mean))) ^ 2, fun = sum) / (cellStats(!is.na(x), sum)[1] * #number of pixels
+        raster::calc((x - mean(raster::cellStats(x, mean))) ^ 2, fun = sum) / (raster::cellStats(!is.na(x), sum)[1] * #number of pixels
                                                                    dim(x)[3]) ##number of layers
 
 
     if (percentage)
     {
-        LCD <- LCD / cellStats(LCD, sum) * 100
+        LCD <- LCD / raster::cellStats(LCD, sum) * 100
 
     } else{
     }
