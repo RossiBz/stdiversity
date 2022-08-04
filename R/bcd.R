@@ -36,7 +36,7 @@
 
 bcd <- function(x, percentage = TRUE) {
   BCD <-
-    cellStats((x - mean(cellStats(x, mean))) ^ 2, sum) / (cellStats(!is.na(x), sum)[1] *
+    raster::cellStats((x - mean(raster::cellStats(x, mean))) ^ 2, sum) / (raster::cellStats(!is.na(x), sum)[1] *
                                                             dim(x)[3])
 
 
