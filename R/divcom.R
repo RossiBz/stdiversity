@@ -1,7 +1,7 @@
 
 #' Total diversity and its components: spatial, layer (temporal) and interaction term
 #'
-#' divcom partitions the overall diversity in a spatial, temporal and interaction term as proposed by Rossi et al. (2020).
+#' divcom partitions the overall diversity in a spatial, temporal and interaction term as proposed by Rossi et al. (2021).
 #' The diversity calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for
 #' for the pairwise dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels
 #' of different layers. All pixels are considered equally important.
@@ -17,9 +17,9 @@
 #'
 #' @usage divcom(x)
 #'
-#' @references Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). Contemplating spatial and temporal
-#' components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
-#' Open Archive.(\href{https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1})
+#' @references Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity: 
+#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
+#' (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 #'
 #'
 #'
@@ -37,20 +37,20 @@
 divcom <-function(x) {
 
 
-  n.pixel <-cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
+  n.pixel <-raster::cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
   n.bands <-dim(x)[3] #number of layers
 
-  tcd <-sum((cellStats(x,mean)-mean(cellStats(x, mean)))^2) * n.pixel #temporal (layer) diversity
+  tcd <-sum((raster::cellStats(x,mean)-mean(raster::cellStats(x, mean)))^2) * n.pixel #temporal (layer) diversity
 
-  scd <-cellStats((calc(x,fun=mean,na.rm=TRUE)-mean(cellStats(x, mean)))^2,sum) * n.bands #spatial (pixel) diversity
+  scd <-raster::cellStats((raster::calc(x,fun=mean,na.rm=TRUE)-mean(raster::cellStats(x, mean)))^2,sum) * n.bands #spatial (pixel) diversity
 
-  cd <-sum(cellStats((x-mean(cellStats(x, mean)))^2,sum)) #total diversity
+  cd <-sum(raster::cellStats((x-mean(raster::cellStats(x, mean)))^2,sum)) #total diversity
 
   icd <-(cd-tcd-scd) #interaction term
 
   dc.return <-c(tcd,scd,icd,cd)/(n.bands*n.pixel) #contribution of the components
 
-  names(dc.return) <-c("Layer component", "Spatial component", "Intercation term", "Total diversity")
+  names(dc.return) <-c("Layer component", "Spatial component", "Interaction term", "Total diversity")
 
 
 
