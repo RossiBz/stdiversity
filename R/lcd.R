@@ -2,7 +2,7 @@
 #' Local contribution of each pixel to diversity
 #'
 #' lcd computes the contribution of each pixel to the overall diversity as proposed by Rossi et al. (2021). The diversity
-#' calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for the pairwise
+#' calculation is based on the sum of squares divided by the number of pixels and layers. The diversity accounts for the pairwise
 #' dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels of
 #' different layers. All pixels are considered equally important.
 #'
