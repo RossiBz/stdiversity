@@ -4,8 +4,8 @@
 
 The package allows to calculate spectral/functional diversity from multi-temporal raster 
 files and the contribution of different components as proposed by Rossi et al. (2021). The diversity calculation is based on 
-the sum of square divided by the number of pixels and layers. The diversity accounts for
-for the pairwise dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels
+the sum of squares divided by the number of pixels and layers. The diversity accounts
+for the pairwise dissimilarity between pixels belonging to the same layer and the dissimilarity between pixels
 of different layers. All pixels are considered equally important.
 A map with the contribution of each pixel to diversity can be created. 
 
