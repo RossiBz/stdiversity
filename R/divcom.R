@@ -2,7 +2,7 @@
 #' Total diversity and its components: spatial, layer (temporal) and interaction term
 #'
 #' divcom partitions the overall diversity in a spatial, temporal and interaction term as proposed by Rossi et al. (2021).
-#' The diversity calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for
+#' The diversity calculation is based on the sum of squares divided by the number of pixels and layers. The diversity accounts for
 #' for the pairwise dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels
 #' of different layers. All pixels are considered equally important.
 #'
