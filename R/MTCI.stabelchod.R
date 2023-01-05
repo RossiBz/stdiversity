@@ -9,7 +9,6 @@
 #'
 #'
 #' @usage data(MTCI.stabelchod)
-#' @import raster
 #'
 #' @format An object of class RasterStack.
 #'
