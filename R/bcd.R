@@ -39,9 +39,6 @@ bcd <- function(x, percentage = TRUE) {
   if (!inherits(x, "RasterLayer")) {
     stop("Input must be a RasterLayer object.")
   }
-    if(any(is.na(x))) {
-    stop("Raster contains NA values")
-  }
   if (!is.logical(percentage)) {
     stop("percentage argument must be logical")
   }
