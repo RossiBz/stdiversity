@@ -35,10 +35,23 @@
 
 
 bcd <- function(x, percentage = TRUE) {
+  
+  if (!inherits(x, "RasterLayer")) {
+    stop("Input must be a RasterLayer object.")
+  }
+    if(any(is.na(x))) {
+    stop("Raster contains NA values")
+  }
+  if (!is.logical(percentage)) {
+    stop("percentage argument must be logical")
+  }
+  
+  
+  
   BCD <-
     raster::cellStats((x - mean(raster::cellStats(x, mean))) ^ 2, sum) / (raster::cellStats(!is.na(x), sum)[1] *
                                                             dim(x)[3])
-
+  
 
   if (percentage)
   {
