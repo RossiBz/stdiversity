@@ -36,7 +36,10 @@
 
 divcom <-function(x) {
 
-
+  if (!inherits(x, "RasterLayer")) {
+    stop("Input must be a RasterLayer object.")
+  }
+  
   n.pixel <-raster::cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
   n.bands <-dim(x)[3] #number of layers
 
