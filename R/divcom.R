@@ -36,8 +36,9 @@
 
 divcom <-function(x) {
 
-  if (!inherits(x, "RasterLayer")) {
-    stop("Input must be a RasterLayer object.")
+  if (class(x)[1] != "RasterStack" | class(x)[1] !="RasterBrick")
+  {
+    stop("x is not RasterStack or RasterBrick")
   }
   
   n.pixel <-raster::cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
