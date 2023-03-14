@@ -36,9 +36,11 @@
 
 bcd <- function(x, percentage = TRUE) {
   
-  if (!inherits(x, "RasterLayer")) {
-    stop("Input must be a RasterLayer object.")
+  if (class(x)[1] != "RasterStack" | class(x)[1] !="RasterBrick")
+  {
+    stop("x is not RasterStack or RasterBrick")
   }
+  
   if (!is.logical(percentage)) {
     stop("percentage argument must be logical")
   }
