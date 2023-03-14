@@ -37,9 +37,10 @@
 
 lcd <- function(x, percentage = TRUE) {
     
-    if (!inherits(x, "RasterLayer")) {
-    stop("Input must be a RasterLayer object.")
-    }
+  if (class(x)[1] != "RasterStack" | class(x)[1] !="RasterBrick")
+  {
+    stop("x is not RasterStack or RasterBrick")
+  }
     
     LCD <-
         raster::calc((x - mean(raster::cellStats(x, mean))) ^ 2, fun = sum) / (raster::cellStats(!is.na(x), sum)[1] * #number of pixels
