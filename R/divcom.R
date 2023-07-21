@@ -46,7 +46,7 @@ divcom <-function(x) {
 
   tcd <-sum((raster::cellStats(x,mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE))^2,na.rm=TRUE) * n.pixel #temporal (layer) diversity
 
-  scd <-raster::cellStats((raster::calc(x,fun=mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE),,na.rm=TRUE))^2,sum,na.rm=TRUE) * n.bands #spatial (pixel) diversity
+  scd <-raster::cellStats((raster::calc(x,fun=mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE))^2,sum,na.rm=TRUE) * n.bands #spatial (pixel) diversity
 
   cd <-sum(raster::cellStats((x-mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE))^2,sum,na.rm=TRUE),na.rm=TRUE) #total diversity
 
