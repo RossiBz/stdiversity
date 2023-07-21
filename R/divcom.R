@@ -44,11 +44,11 @@ divcom <-function(x) {
   n.pixel <-raster::cellStats(!is.na(x),sum)[1] #number of pixels that are not NA
   n.bands <-dim(x)[3] #number of layers
 
-  tcd <-sum((raster::cellStats(x,mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE)))^2) * n.pixel #temporal (layer) diversity
+  tcd <-sum((raster::cellStats(x,mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE)))^2,na.rm=TRUE) * n.pixel #temporal (layer) diversity
 
-  scd <-raster::cellStats((raster::calc(x,fun=mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE)))^2,sum) * n.bands #spatial (pixel) diversity
+  scd <-raster::cellStats((raster::calc(x,fun=mean,na.rm=TRUE)-mean(raster::cellStats(x, mean,na.rm=TRUE)))^2,sum,na.rm=TRUE) * n.bands #spatial (pixel) diversity
 
-  cd <-sum(raster::cellStats((x-mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE))^2,sum)) #total diversity
+  cd <-sum(raster::cellStats((x-mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE))^2,sum,na.rm=TRUE),na.rm=TRUE) #total diversity
 
   icd <-(cd-tcd-scd) #interaction term
 
