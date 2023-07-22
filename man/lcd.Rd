@@ -15,8 +15,8 @@ lcd(x, percentage=TRUE)
 Raster* object with local contribution of each pixel to diversity
 }
 \description{
-lcd computes the contribution of each pixel to the overall diversity as proposed by Rossi et al. (2020). The diversity
-calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for the pairwise
+lcd computes the contribution of each pixel to the overall diversity as proposed by Rossi et al. (2021). The diversity
+calculation is based on the sum of squares divided by the number of pixels and layers. The diversity accounts for the pairwise
 dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels of
 different layers. All pixels are considered equally important.
 }
@@ -29,8 +29,8 @@ plot(lcd(MTCI.stabelchod))
 
 }
 \references{
-Rossi et al. (2020) Remote Sensing of Environment 236:111415
-(\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
+Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Ecological Indicators
+(\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 }
 \author{
 Christian Rossi christian.rossi1990@gmail.com
