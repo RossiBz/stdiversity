@@ -1,12 +1,13 @@
 Package: stdiversity
 Type: Package
-Title: Spatial temproal diversity of raster data 
+Title: Spatial temporal diversity of raster data 
 Version: 0.1.0
 Author: Christian Rossi
-Maintainer: Christian Rossi <christian.rossi@nationalpark.ch>
-Description: The package allows to calculate spectral/functional diversity from multi-temporal raster 
-   files and the contribution of different components as proposed by Rossi et al. (2020). 
-   A map with the contribution of each pixel to diversity can be created. 
+Maintainer: Christian Rossi <christian.rossi1990@gmail.com.ch>
+Description: he package allows to calculate spectral/functional diversity from multi-temporal raster files and the contribution of different components 
+as proposed by Rossi et al. (2021). The diversity calculation is based on the sum of squares divided by the number of pixels and layers. 
+The diversity accounts for the pairwise dissimilarity between pixels belonging to the same layer and the dissimilarity between pixels of different layers. 
+All pixels are considered equally important. A map with the contribution of each pixel to diversity can be created.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -18,6 +19,7 @@ Imports:
 RoxygenNote: 7.0.2
 URL: https://github.com/RossiBz/stdiversity
 BugReports: https://github.com/RossiBz/stdiversity/issues
-Reference: Rossi, C., Kneubühler, M., Haller, R., Schaepman, M., Schütz, M., & Risch, A. (2020). 
-           Contemplating spatial and temporal components of functional diversity: Full exploitation of satellite data for biodiversity monitoring. Earth and Space Science
-           Open Archive.(\href{https://www.essoar.org/doi/abs/10.1002/essoar.10501762.1})
+Reference: Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). 
+Remote sensing of spectral diversity: A new methodological approach to account for spatio-temporal dissimilarities between plant communities. 
+Ecological Indicators, 130, 108106.(\href{https://doi.org/10.1016/j.ecolind.2021.108106})
+
