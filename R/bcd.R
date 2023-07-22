@@ -1,5 +1,3 @@
-
-
 #' Layer contribution to diversity
 #'
 #' bcd computes the contribution of each layer to the overall diversity as proposed by Rossi et al. (2021). The diversity
@@ -8,9 +6,9 @@
 #' different layers. All pixels are considered equally important.
 #'
 #' @param x filename (character), Raster* object
-#' @param percentage logical. If TRUE the contribution of each layer is expressed as percentage.
+#' @param percentage logical. If TRUE the contribution of each layer is expressed as a percentage.
 #'
-#' @return Named numeric vector with contribution of each layer to diversity
+#' @return Named numeric vector with the contribution of each layer to diversity
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
@@ -48,7 +46,7 @@ bcd <- function(x, percentage = TRUE) {
   
   
   BCD <-
-    raster::cellStats((x - mean(raster::cellStats(x, mean))) ^ 2, sum) / (raster::cellStats(!is.na(x), sum)[1] *
+    raster::cellStats((x - mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE)) ^ 2, sum,na.rm=TRUE) / (raster::cellStats(!is.na(x), sum)[1] *
                                                             dim(x)[3])
   
 
