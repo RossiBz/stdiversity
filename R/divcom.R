@@ -1,5 +1,5 @@
 
-#' Total diversity and its components:layer (temporal), spatial and interaction term
+#' Total diversity and its components: layer (temporal), spatial and interaction term
 #'
 #' divcom partitions the overall diversity in a temporal, spatial and interaction term as proposed by Rossi et al. (2021).
 #' The diversity calculation is based on the sum of squares divided by the number of pixels and layers. The diversity accounts
@@ -8,7 +8,7 @@
 #'
 #' @param x filename (character), Raster* object
 #'
-#' @return Named numeric vector with the contribution of each layer to diversity (i.e., temporal, spatial, interaction and total)
+#' @return Named numeric vector with the contribution of each component (i.e., temporal, spatial, interaction and total)
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
