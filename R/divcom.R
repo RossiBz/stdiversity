@@ -8,7 +8,7 @@
 #'
 #' @param x filename (character), Raster* object
 #'
-#' @return Named numeric vector with contribution of each layer to diversity
+#' @return Named numeric vector with the contribution of each layer to diversity (i.e., temporal, spatial, interaction and total)
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
@@ -23,7 +23,7 @@
 #'
 #'
 #'
-#' @examples \dontrun{#Calculate total diverstiy and its components of a RasterStack
+#' @examples \dontrun{#Calculate total diversity and its components of a RasterStack
 #' ex <-divcom(MTCI.stabelchod)
 #' # MTCI.stabelchod is a RasterStack containing
 #' # a time series of spectral information
