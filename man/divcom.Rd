@@ -10,16 +10,16 @@ divcom(x)
 \item{x}{filename (character), Raster* object}
 }
 \value{
-Named numeric vector with contribution of each layer to diversity
+Named numeric vector with the contribution of each component (i.e., temporal, spatial, interaction and total)
 }
 \description{
-divcom partitions the overall diversity in a spatial, temporal and interaction term as proposed by Rossi et al. (2020).
-The diversity calculation is based on the sum of square divided by the number of pixels and layers. The diversity accounts for
-for the pairwise dissimilarity between pixels belonging to the same layer as well as the dissimilarity between pixels
+divcom partitions the overall diversity in a spatial, temporal and interaction term as proposed by Rossi et al. (2021).
+The diversity calculation is based on the sum of squares divided by the number of pixels and layers. The diversity accounts
+for the pairwise dissimilarity between pixels belonging to the same layer (e.g. temporal information) as well as the dissimilarity between pixels
 of different layers. All pixels are considered equally important.
 }
 \examples{
-\dontrun{#Calculate total diverstiy and its components of a RasterStack
+\dontrun{#Calculate total diversity and its components of a RasterStack
 ex <-divcom(MTCI.stabelchod)
 # MTCI.stabelchod is a RasterStack containing
 # a time series of spectral information
@@ -28,8 +28,8 @@ ex <-divcom(MTCI.stabelchod)
 
 }
 \references{
-Rossi et al. (2020) Remote Sensing of Environment 236:111415
-(\href{https://www.sciencedirect.com/science/article/pii/S0034425719304341}{ScienceDirect})
+Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Ecological Indicators
+(\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 }
 \author{
 Christian Rossi christian.rossi1990@gmail.com
