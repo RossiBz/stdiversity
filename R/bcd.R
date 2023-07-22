@@ -52,7 +52,7 @@ bcd <- function(x, percentage = TRUE) {
 
   if (percentage)
   {
-    BCD <- BCD / sum(BCD) * 100
+    BCD <- BCD / sum(BCD,na.rm=TRUE) * 100
 
   } else{
   }
