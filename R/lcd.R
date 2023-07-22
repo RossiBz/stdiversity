@@ -14,15 +14,12 @@
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
 #' @import raster
-#' @import rgdal
 #'
 #'
 #' @usage lcd(x, percentage=TRUE)
 #'
-#' @references Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity: 
-#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
-#' (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
-#'
+#' @references Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity:
+#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106. (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
 #'
 #'
 #' @examples \dontrun{#plot pixel contribution to diversity
@@ -36,12 +33,12 @@
 
 
 lcd <- function(x, percentage = TRUE) {
-    
+
   if (class(x)[1] != "RasterStack" &&  class(x)[1] !="RasterBrick")
   {
     stop("x is not RasterStack or RasterBrick")
   }
-    
+
     LCD <-
         raster::calc((x - mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE)) ^ 2, fun = sum,na.rm=TRUE) / (raster::cellStats(!is.na(x), sum)[1] * #number of pixels
                                                                    dim(x)[3]) ##number of layers
