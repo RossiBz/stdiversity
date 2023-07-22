@@ -7,9 +7,9 @@
 #' different layers. All pixels are considered equally important.
 #'
 #' @param x filename (character), Raster* object
-#' @param percentage logical. If TRUE the contribution of each pixel is expressed as percentage.
+#' @param percentage logical. If TRUE the contribution of each pixel is expressed as a percentage.
 #'
-#' @return Raster* object with local contribution of each pixel to diversity
+#' @return Raster* object with the local contribution of each pixel to diversity
 #'
 #' @author Christian Rossi christian.rossi1990@gmail.com
 #'
@@ -43,13 +43,13 @@ lcd <- function(x, percentage = TRUE) {
   }
     
     LCD <-
-        raster::calc((x - mean(raster::cellStats(x, mean))) ^ 2, fun = sum) / (raster::cellStats(!is.na(x), sum)[1] * #number of pixels
+        raster::calc((x - mean(raster::cellStats(x, mean,na.rm=TRUE),na.rm=TRUE)) ^ 2, fun = sum,na.rm=TRUE) / (raster::cellStats(!is.na(x), sum)[1] * #number of pixels
                                                                    dim(x)[3]) ##number of layers
 
 
     if (percentage)
     {
-        LCD <- LCD / raster::cellStats(LCD, sum) * 100
+        LCD <- LCD / raster::cellStats(LCD, sum,na.rm=TRUE) * 100
 
     } else{
     }
