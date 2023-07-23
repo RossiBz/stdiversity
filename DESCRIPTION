@@ -11,8 +11,7 @@ LazyData: true
 Depends:
     R (>= 3.5.0)
 Imports: 
-    raster,
-    rgdal
+    raster
 URL: https://github.com/RossiBz/stdiversity
 BugReports: https://github.com/RossiBz/stdiversity/issues
 Roxygen: list(markdown = TRUE)

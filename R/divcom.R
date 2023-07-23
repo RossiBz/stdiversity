@@ -17,7 +17,7 @@
 #' @usage divcom(x)
 #'
 #' @references Rossi, C., Kneubühler, M., Schütz, M., Schaepman, M.E, Haller, R.M., & Risch, A.C. (2021). Remote sensing of spectral diversity:
-#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106. (\href{https://doi.org/10.1016/j.ecolind.2021.108106})
+#' A new methodological approach to account for spatio-temporal dissimilarities between plant communities. Ecological Indicators, 130, 108106.
 #'
 #' @examples \dontrun{#Calculate total diversity and its components of a RasterStack
 #' ex <-divcom(MTCI.stabelchod)
